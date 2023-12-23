@@ -1,17 +1,17 @@
-import 'package:ecommerce_app/Views/Shared/text_style.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+import 'package:ecommerce_app/Views/Shared/text_style.dart';
+class CartView extends StatefulWidget {
+  const CartView({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<CartView> createState() => _CartViewState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _CartViewState extends State<CartView> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
         child: Text("Cart Page",style: appStyle(35, Colors.black, FontWeight.bold),),
       ),

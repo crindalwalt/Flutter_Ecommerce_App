@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/Views/Shared/text_style.dart';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,9 +11,28 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Center(
-        child: Text("Home Page",style: appStyle(35, Colors.black, FontWeight.bold),),
+    return Scaffold(
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: Stack(
+          children: [
+            Container(
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height * 0.4,
+              padding: const EdgeInsets.fromLTRB(16, 45, 0, 0),
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                      "https://source.unsplash.com/random/400x400"),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: Column(
+                children: [],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -1,17 +1,17 @@
-import 'package:ecommerce_app/Views/Shared/text_style.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+import 'package:ecommerce_app/Views/Shared/text_style.dart';
+class SearchView extends StatefulWidget {
+  const SearchView({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<SearchView> createState() => _SearchViewState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _SearchViewState extends State<SearchView> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
         child: Text("Search Page",style: appStyle(35, Colors.black, FontWeight.bold),),
       ),
